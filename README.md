@@ -1,7 +1,7 @@
 # SatochipApplet
 Open source javacard applet implementing a crypto-currency hardware wallet with full BIP32/BIP39 support.
 
-# Demonstration 
+# Demonstration
 
 [![demonstrationon youtube](https://i.ytimg.com/vi/dbQoUrcb8SI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDn6M4pa5vMLDvRTFuL00UejiWmeQ)](https://youtu.be/t0IsK1fpEQQ)
 
@@ -46,7 +46,7 @@ An interesting guide to consult before shopping can be found [here](https://gith
 ## Tested and working
 
 ### Yubikey Neo
-**Important remark:** the Yubikeys currently sold by Yubico are configured for production only and it is not possible to load the applet on these dongles (see [this link](https://www.yubico.com/2014/07/yubikey-neo-updates/) for more details). Only the development Yubikeys (with serial number below 3,000,000) are suitable for our use! 
+**Important remark:** the Yubikeys currently sold by Yubico are configured for production only and it is not possible to load the applet on these dongles (see [this link](https://www.yubico.com/2014/07/yubikey-neo-updates/) for more details). Only the development Yubikeys (with serial number below 3,000,000) are suitable for our use!
 
 ### NXP JCOP J2D081
 Available for purchase [here](https://www.javacardsdk.com/product/j2d081/). (MOQ: 5 pieces).
@@ -93,7 +93,7 @@ git submodule add https://github.com/martinpaljak/oracle_javacard_sdks sdks
 ```
 
 * run ant:
-```ant```
+  ```ant```
 
 The .cap file should build in the SatochipApplet folder.
 
@@ -112,14 +112,14 @@ A more detailed tutorial is available on the GlobalPlatformPro [repository](http
 
 # Use
 
-To use the applet, you have to connect your client application to the smartcard and send command APDU. These commands will be processed by the smartcard who will then send a response APDU. 
+To use the applet, you have to connect your client application to the smartcard and send command APDU. These commands will be processed by the smartcard who will then send a response APDU.
 
 ### Supported software clients
 
 - Bitcoin: the [Bitcoin Electrum-Satochip](https://github.com/Toporin/electrum-satochip/releases) is a version of [Electrum](https://github.com/spesmilo/electrum) that was slightly modified to integrate the Satochip hardware wallet.
 - Litecoin: the [Litecoin Electrum-Satochip](https://github.com/Toporin/electrum-satochip/releases) is a version of [Electrum for Litecoin](https://github.com/pooler/electrum-ltc/) that was slightly modified to integrate the Satochip hardware wallet.
 - Bitcoin Cash: the [Electron Cash-Satochip](https://github.com/Toporin/electrum-satochip/releases) is a version of [Electron Cash](https://github.com/Electron-Cash/Electron-Cash) that was slightly modified to integrate the Satochip hardware wallet.
-**Note:** Satochip is natively supported by Electron Cash, we strongly encourage you to download the client from the [official website](https://electroncash.org/).
+  **Note:** Satochip is natively supported by Electron Cash, we strongly encourage you to download the client from the [official website](https://electroncash.org/).
 - eCash (XEC): Satochip is natively supported by Electrum ABC, we strongly encourage you to download the client from the [official website](https://www.bitcoinabc.org/electrum/).
 
 - Metamask: you can use your Satochip hardware wallet with a forked version of Metamask called [Satomask](https://github.com/Toporin/metamask-extension/releases). To allow the communication between the card and your web browser, you will need the [Satochip Bridge](https://github.com/Toporin/Satochip-Bridge/releases).
@@ -127,7 +127,7 @@ To use the applet, you have to connect your client application to the smartcard 
 - MyEtherWallet: you can use your Satochip hardware wallet with a forked version of MyEtherWallet called [MEW Satochip](https://github.com/Toporin/MyEtherWallet/releases). To allow the communication between the card and your web browser, you will need the [Satochip Bridge](https://github.com/Toporin/Satochip-Bridge/releases).
 
 ### Deprecated (use older releases for this)
-[SatoChipClient](https://github.com/Toporin/SatoChipClient) is a small java library that allows to easily interface the SatoChip applet to your application through a simple set of API. An example of application is the [BitcoinWallet](https://github.com/Toporin/BitcoinWallet) java application, that uses SatoChipClient through another Bitcoin library called [BitcoinCore](https://github.com/Toporin/BitcoinCore).  
+[SatoChipClient](https://github.com/Toporin/SatoChipClient) is a small java library that allows to easily interface the SatoChip applet to your application through a simple set of API. An example of application is the [BitcoinWallet](https://github.com/Toporin/BitcoinWallet) java application, that uses SatoChipClient through another Bitcoin library called [BitcoinCore](https://github.com/Toporin/BitcoinCore).
 
 # Credits
 
@@ -139,6 +139,5 @@ To use the applet, you have to connect your client application to the smartcard 
 
 This application is distributed under the GNU Affero General Public License version 3.
 
-Some parts of the code may be licensed under a different (MIT-like) license. 
+Some parts of the code may be licensed under a different (MIT-like) license.
 [Contact us](mailto:support@satochip.io) if you feel that some license combination is inappropriate.
-
